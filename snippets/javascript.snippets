@@ -30,7 +30,7 @@ snippet cnt
 	});
 	
 	function mapStateToProps(state) {
-		return {};
+		return { ...state };
 	}
 	
 	export default connect(mapStateToProps)(${1});
