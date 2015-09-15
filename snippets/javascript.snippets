@@ -1,6 +1,6 @@
 snippet cs
 	const cx = classNames({
-		'${1}': ${2:true}
+		'${1:classname}': ${2:true}
 	});
 snippet cdm
 	componentDidMount: function() {
@@ -62,7 +62,7 @@ snippet rcc
 
 	export default React.createClass({
 		
-		displayName: '${1}',
+		displayName: '${1:ComponentName}',
 
 		render: function() {
 			return (
