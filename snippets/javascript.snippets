@@ -14,26 +14,26 @@ snippet cnt
 	import React from 'react';
 	import { connect } from 'react-redux';
 
-	const ${1} = React.createClass({
-		
-		displayName: '${1}',
-		
+	const ${1:ContainerName} = React.createClass({
+
+		displayName: '$1',
+
 		propTypes: {
 			history: React.PropTypes.object
 		},
 
 		render: function() {
 			return (
-				${2:<div />}
+				${0:<div />}
 			);
 		}
 	});
-	
+
 	function mapStateToProps(state) {
 		return { ...state };
 	}
-	
-	export default connect(mapStateToProps)(${1});
+
+	export default connect(mapStateToProps)($1);
 snippet cwm
 	componentWillMount: function() {
 		${1}
@@ -85,7 +85,7 @@ snippet rcc
 	// import './index.scss';
 
 	export default React.createClass({
-		
+
 		displayName: '${1:ComponentName}',
 
 		render: function() {
