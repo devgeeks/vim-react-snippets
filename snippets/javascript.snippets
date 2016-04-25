@@ -1,13 +1,16 @@
+snippet index
+	import ${1:ComponentName} from './$1';
+	export default $1;
 snippet cs
 	const cx = classNames({
-		'${1:classname}': ${2:true}
+		${1:classname}: ${2:true}
 	});
 snippet cdm
-	componentDidMount: function() {
+	componentDidMount() {
 		${1}
 	},
 snippet cdup
-	componentDidUpdate: function(prevProps, prevState) {
+	componentDidUpdate(prevProps, prevState) {
 		${1}
 	},
 snippet cnt
@@ -22,32 +25,32 @@ snippet cnt
 			history: React.PropTypes.object
 		},
 
-		render: function() {
+		render() {
 			return (
 				${0:<div />}
 			);
-		}
+		},
 	});
 
 	function mapStateToProps(state) {
 		return { ...state };
-	}
+	},
 
 	export default connect(mapStateToProps)($1);
 snippet cwm
-	componentWillMount: function() {
+	componentWillMount() {
 		${1}
 	},
 snippet cwr
-	componentWillReceiveProps: function(nextProps) {
+	componentWillReceiveProps(nextProps) {
 		${1}
 	},
 snippet cwun
-	componentWillUnmount: function() {
+	componentWillUnmount() {
 		${1}
 	},
 snippet cwu
-	componentWillUpdate: function(nextProps, nextState) {
+	componentWillUpdate(nextProps, nextState) {
 		${1}
 	},
 snippet cx
@@ -57,13 +60,13 @@ snippet cx
 snippet fup
 	forceUpdate(${1:callback});
 snippet gdp
-	getDefaultProps: function() {
+	getDefaultProps() {
 		return {
 			${1}
 		};
 	},
 snippet gis
-	getInitialState: function() {
+	getInitialState() {
 		return {
 			${1}: ${2}
 		};
@@ -80,32 +83,32 @@ snippet pt
 	},
 snippet rcc
 	import React from 'react';
-	// import classNames from 'classnames';
+	//import classNames from 'classnames';
 
-	// import './index.scss';
+	//import './index.less';
 
 	export default React.createClass({
 
 		displayName: '${1:ComponentName}',
 
-		render: function() {
+		render() {
 			return (
 				${2:<div />}
 			);
-		}
+		},
 	});
 snippet ren
-	render: function() {
+	render() {
 		return (
 			${1:<div />}
 		);
-	}
+	},
 snippet sst
 	setState({
 		${1}: ${2}
 	});
 snippet scu
-	shouldComponentUpdate: function(nextProps, nextState) {
+	shouldComponentUpdate(nextProps, nextState) {
 		${1}
 	},
 snippet props
